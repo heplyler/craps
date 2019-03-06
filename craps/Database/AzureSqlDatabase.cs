@@ -15,9 +15,7 @@ namespace craps.Database
         // creating this as a private static database variable.
         private static SqlConnection azureDatabase;
 
-        private string connectionString = "Server=tcp:crapsserver.database.windows.net,1433;Initial Catalog=crapsgame;" +
-                        "Persist Security Info=False;User ID=craps;Password=Dicegame09;" +
-                        "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string connectionString = "You will need to replace this string with an appropriate string from microsoft.";
 
         public void TestDatabase()
         {
@@ -26,9 +24,7 @@ namespace craps.Database
             {
                 // this is the connection string.
                 azureDatabase = new SqlConnection(
-                        "Server=tcp:crapsserver.database.windows.net,1433;Initial Catalog=crapsgame;" +
-                        "Persist Security Info=False;User ID=craps;Password=Dicegame09;" +
-                        "MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+                        "You will need to replace this string with an appropriate string from microsoft."
                    );
                 azureDatabase.Open();
             }
